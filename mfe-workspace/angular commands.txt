@@ -1,0 +1,12 @@
+to run one by one projects below are the commands
+ng s shell --port 4200 -o
+ng s auth --port 4201
+ng s dashboard --port 4202
+ng s orders --port 4203
+ng s users --port 4204
+ng s admin --port 4205
+
+============
+run all at time
+npm run start
+ 

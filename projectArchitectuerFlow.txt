@@ -1,0 +1,181 @@
+mfe-workspace/
+│
+├── angular.json
+├── package.json
+├── tsconfig.json
+│
+├── projects/
+│   │
+│   ├───────────────────────────────────────────────
+│   │ 🐚 SHELL (HOST APPLICATION)
+│   ├───────────────────────────────────────────────
+│   │
+│   ├── shell/
+│   │   ├── webpack.config.js
+│   │   ├── module-federation.config.js
+│   │   │
+│   │   └── src/
+│   │       ├── main.ts
+│   │       ├── index.html
+│   │       ├── styles.scss
+│   │       │
+│   │       └── app/
+│   │           ├── core/
+│   │           │   ├── services/
+│   │           │   │   └── auth.service.ts
+│   │           │   ├── guards/
+│   │           │   │   └── auth.guard.ts
+│   │           │   ├── interceptors/
+│   │           │   │   └── http.interceptor.ts
+│   │           │   └── index.ts
+│   │           │
+│   │           ├── shared/
+│   │           │   ├── components/
+│   │           │   │   ├── navbar/
+│   │           │   │   └── footer/
+│   │           │   ├── pipes/
+│   │           │   ├── directives/
+│   │           │   └── index.ts
+│   │           │
+│   │           ├── layout/
+│   │           │   ├── header/
+│   │           │   │   └── header.component.ts
+│   │           │   ├── sidebar/
+│   │           │   │   └── sidebar.component.ts
+│   │           │   └── layout.component.ts
+│   │           │
+│   │           ├── remote-loader/
+│   │           │   └── load-remote.ts
+│   │           │
+│   │           ├── app.routes.ts
+│   │           ├── app.config.ts
+│   │           └── app.component.ts
+│   │
+│   ├───────────────────────────────────────────────
+│   │ 🔐 AUTH MICRO FRONTEND
+│   ├───────────────────────────────────────────────
+│   │
+│   ├── auth/
+│   │   ├── webpack.config.js
+│   │   ├── module-federation.config.js
+│   │   │
+│   │   └── src/
+│   │       ├── main.ts
+│   │       ├── index.html
+│   │       ├── styles.scss
+│   │       │
+│   │       └── app/
+│   │           ├── core/
+│   │           │   ├── services/
+│   │           │   │   └── auth.service.ts
+│   │           │   ├── guards/
+│   │           │   └── index.ts
+│   │           │
+│   │           ├── shared/
+│   │           │   ├── components/
+│   │           │   │   ├── input/
+│   │           │   │   └── button/
+│   │           │   ├── pipes/
+│   │           │   ├── directives/
+│   │           │   └── index.ts
+│   │           │
+│   │           ├── features/
+│   │           │   ├── login/
+│   │           │   │   ├── login.component.ts
+│   │           │   │   ├── login.component.html
+│   │           │   │   └── login.component.scss
+│   │           │   │
+│   │           │   ├── signup/
+│   │           │   │   ├── signup.component.ts
+│   │           │   │   ├── signup.component.html
+│   │           │   │   └── signup.component.scss
+│   │           │   │
+│   │           │   ├── components/
+│   │           │   ├── services/
+│   │           │   └── auth.routes.ts
+│   │           │
+│   │           ├── layout/ (optional)
+│   │           │
+│   │           ├── app.routes.ts
+│   │           ├── app.config.ts
+│   │           └── app.component.ts
+│   │
+│   ├───────────────────────────────────────────────
+│   │ 📦 ORDERS MICRO FRONTEND
+│   ├───────────────────────────────────────────────
+│   │
+│   ├── orders/
+│   │   ├── webpack.config.js
+│   │   ├── module-federation.config.js
+│   │   │
+│   │   └── src/
+│   │       └── app/
+│   │           ├── core/
+│   │           ├── shared/
+│   │           ├── features/
+│   │           │   ├── order-list/
+│   │           │   │   ├── order-list.component.ts
+│   │           │   │   ├── order-list.component.html
+│   │           │   │   └── order-list.component.scss
+│   │           │   │
+│   │           │   ├── order-details/
+│   │           │   │   ├── order-details.component.ts
+│   │           │   │   ├── order-details.component.html
+│   │           │   │   └── order-details.component.scss
+│   │           │   │
+│   │           │   ├── services/
+│   │           │   └── orders.routes.ts
+│   │           │
+│   │           ├── app.routes.ts
+│   │           ├── app.config.ts
+│   │           └── app.component.ts
+│   │
+│   ├───────────────────────────────────────────────
+│   │ 👥 USERS MICRO FRONTEND
+│   ├───────────────────────────────────────────────
+│   │
+│   ├── users/
+│   │   └── src/app/
+│   │       ├── core/
+│   │       ├── shared/
+│   │       ├── features/
+│   │       │   ├── user-list/
+│   │       │   ├── user-details/
+│   │       │   └── users.routes.ts
+│   │       ├── app.routes.ts
+│   │       ├── app.config.ts
+│   │       └── app.component.ts
+│   │
+│   ├───────────────────────────────────────────────
+│   │ 📊 DASHBOARD MICRO FRONTEND
+│   ├───────────────────────────────────────────────
+│   │
+│   ├── dashboard/
+│   │   └── src/app/
+│   │       ├── core/
+│   │       ├── shared/
+│   │       ├── features/
+│   │       │   ├── dashboard-home/
+│   │       │   ├── analytics/
+│   │       │   └── dashboard.routes.ts
+│   │       ├── app.routes.ts
+│   │       ├── app.config.ts
+│   │       └── app.component.ts
+│   │
+│   ├───────────────────────────────────────────────
+│   │ 🛠️ ADMIN MICRO FRONTEND
+│   ├───────────────────────────────────────────────
+│   │
+│   ├── admin/
+│   │   └── src/app/
+│   │       ├── core/
+│   │       ├── shared/
+│   │       ├── features/
+│   │       │   ├── roles/
+│   │       │   ├── permissions/
+│   │       │   └── admin.routes.ts
+│   │       ├── app.routes.ts
+│   │       ├── app.config.ts
+│   │       └── app.component.ts
+│
+└── node_modules/
